@@ -1,45 +1,37 @@
-# Number Guessing Game
-
+# Random Number Guessing Game
 ## Introduction
-
-The "Number Guessing Game" is a simple and interactive Python program where players attempt to guess a randomly generated two-digit number. The game provides hints, tracks the number of attempts, and offers a highscore challenge for players to beat.
-
-## Features
-
-- Generates a random two-digit number for players to guess.
-- Accepts user input and provides immediate feedback on each guess.
-- Offers hints to guide players in their guessing attempts.
-- Keeps track of the number of attempts made by the player.
-- Displays a highscore challenge and saves the best score to a file.
-- Rewards players based on their performance.
-
+This is a simple Python program that implements a random number guessing game. The program generates a random two-digit number, and the user's task is to guess that number within the fewest attempts possible.
 ## How to Play
 
-1. Clone the repository to your local machine.
-2. Run the `guess_the_number (game).py` script in your Python environment.
-3. Enter your guess when prompted and press Enter to see if you guessed correctly.
-4. Continue guessing until you correctly guess the random number.
-5. Aim to beat the highscore and become a master guesser!
+1. Run the Python script `random_number_game.py`.
+2. The program will generate a random number between 0 and 99 (inclusive).
+3. The user will be prompted to input their guess of the generated number.
+4. If the input is not an integer, the program will ask for a valid input.
+5. If the guessed number is correct, the user wins the game.
+6. If the guessed number is incorrect, the program provides hints ("larger" or "smaller") to guide the user towards the correct answer.
+7. The game continues until the user guesses the correct number.
+8. After successfully guessing the number, the program displays the number of attempts it took to win.
 
-## Requirements
+## Highscore
 
-The game requires Python 3.x to be installed on your system.
+The game keeps track of the best score (fewest number of attempts) and displays a message if the user breaks the previous highscore.
 
-## License
+The highscore is saved in the `highscore.txt` file. If the file does not exist or if the current user's score is better than the previous highscore, the program updates the highscore.
 
-This project is licensed under the [MIT License](LICENSE), allowing you to use, modify, and distribute the code freely.
+## Difficulty Levels
 
-## Contribution
+The game provides feedback based on the number of attempts taken by the user:
+- If the user guesses the number within 5 attempts, they are called a genius!
+- If the user guesses the number within 10 attempts, they are told "Not bad!"
+- If the user takes more than 10 attempts, they are encouraged to try again next time.
 
-Contributions to the project are welcome! If you find any bugs or have ideas for improvements, please feel free to open an issue or submit a pull request.
+## Usage
 
-## Author
+1. Clone the repository or download the `random_number_game.py` file.
+2. Make sure you have Python installed on your machine.
+3. Open a terminal or command prompt and navigate to the directory where the `random_number_game.py` file is located.
+4. Run the script using the command: `python random_number_game.py`.
 
-[M.Usman Siddiqui](https://github.com/Muhamma-Usman-Sidd)
+## Contact
 
-## Acknowledgments
-
-Special thanks to the Python community and the developers of the `random` module for making this project possible.
-
-
-
+For inquiries, questions, or feedback, please contact [Muhammad Usman] at [usman.the.coder@gmail.com].
